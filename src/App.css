@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  background-color: #F8FAFC;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.App {
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.top-header {
+  background-color: #23282C;
+  color: #F8FAFC;
+  height: 50px;
+}
+
+.navbar, .viewport {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.viewport {
+  padding: 15px 10px;
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  width: calc(100% - 20px);
+  padding: 15px;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 3px;
+}
+
+.entry-form .fill_out_form {
+  margin-top: 0;
+}
+
+.entry-form.register {
+  width: 100%;
+}
+
+.form-item {
+  margin-bottom: 1rem;
+  outline: 0;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-color: #F0F0F0;
+}
+
+.form-item:focus-visible {
+  outline: #FF3333;
+}
+
+.submit-btn {
+  background-color: #3490DC;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  margin: 0;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.back-btn {
+  cursor: pointer;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .225s ease;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.back-btn > svg {
+  position: relative;
+  left: -1px;
+}
+
+.back-btn:hover {
+  background-color: #42494F;
+  color: #f8fafc;
+}
+
+.modal {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal > div {
+  max-width: 330px;
+  width: calc(100% - 20px);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

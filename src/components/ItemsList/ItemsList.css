@@ -1,0 +1,78 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-container .page-control {
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 1rem;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: background-color .225s ease;
+}
+
+.pagination-container .page-control.left {
+    padding-right: 17px;
+    padding-left: 16px;
+}
+
+.pagination-container .page-control.right {
+    padding-left: 18px;
+}
+
+.pagination-container .page-control.active {
+    visibility: visible;
+}
+
+.pagination-container .page-control.active:hover {
+    background-color: #42494F;
+    color: #f8fafc;
+}
+
+.list-items .item-desc {
+    padding: 0.2rem 0.7rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.list-items .item .item-desc:hover {
+    overflow: visible;
+}
+
+.list-items .item-desc.date {
+    width: 140px;
+}
+
+.list-items .list-header {
+    margin-bottom: 1rem;
+}
+
+.list-items .list-header .total-docs {
+    font-size: 1.4rem;
+}
+
+.list-items .list-header .back-btn {
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+
+.list-items .list-sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.list-items .full-name {
+    display: flex;
+    width: 47%;
+}
+
+.list-items .full-name .item-desc {
+    width: 50%;
+}

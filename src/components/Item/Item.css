@@ -1,0 +1,47 @@
+.item {
+    background-color: #F0F0F0;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    padding: 0.5rem 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title .edit-form {
+    padding: 0.5rem 1rem;
+    background-color: #32CD75;
+    border: none;
+    border-radius: 3px;
+    color: #F0F0F0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.title .edit-form.cancel {
+    background-color: #7C819C;
+}
+
+.item:hover {
+    background-color: #42494F;
+    color: #F0F0F0;
+}
+
+.create-desc {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    width: 53%;
+}
+
+.create-desc .item-desc {
+    max-width: 250px;
+    width: calc(100% - 280px);
+}

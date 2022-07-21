@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-container .nav-item {
+    cursor: pointer;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 15px;
+}
+
+.nav-container .nav-item.selected,
+.nav-container .nav-item:hover {
+    background-color: #42494F;
+}
+
+.user-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.user-container .username {
+    cursor: pointer;
+}
+
+.user-container .username .icon {
+    margin-left: 1rem;
+}
+
+.user-container .user-acc {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #23282c;
+    padding: 0.5rem;
+}
+
+.user-container .user-acc button {
+    white-space: nowrap;
+    border-radius: 3px;
+    width: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    color: #f0f0f0;
+}
+
+.user-container .user-acc .register-user-btn {
+    background-color: #3490DC;
+}
+
+.user-container .user-acc .logout {
+    background-color: #FF3333;
+    margin-top: 0.5rem;
+}
